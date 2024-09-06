@@ -1,0 +1,71 @@
+@media(max-width: 736px) {
+    .title {
+        font-size: 10rem;
+    }
+}
+
+@media(max-width: 580px) {
+    .title {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 472px) {
+    .title {
+        font-size: 7rem;
+
+    }
+
+    .btnS {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 436px) {
+    .input-container {
+        width: 380px;
+    }
+
+    .input-main input,
+    .btn,
+    .delBtn,
+    .task-item {
+        font-size: 24px;
+
+    }
+
+    .task-item {
+        padding: 8px 10px;
+    }
+
+    .delBtn {
+        padding-left: 5px;
+    }
+
+}
+
+@media(max-width: 410px) {
+    .title {
+        font-size: 6rem;
+
+    }
+
+    .input-container {
+        width: 350px;
+    }
+
+    .input-main input,
+    .btn,
+    .delBtn,
+    .task-item {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 372px) {
+    .input-container {
+        width: 340px;
+    }
+
+
+}

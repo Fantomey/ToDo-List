@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root {
+    --black: #000;
+    --white: #ffffff;
+
+    --blackRGBA: rgba(255, 255, 255, 0.3);
+    --whiteRGBA: rgba(0, 0, 0, 0.4);
+
+    --hover-dark: rgba(58, 58, 58, 0.5);
+    --hover-light: rgba(139, 135, 135, 0.3);
+
+    --task-done: rgba(111, 179, 111, 0.5);
+
+    --backgroungDark: #1a2225;
+    --backgroungLight: #e9caca;
+
+    --back-color: var(--backgroungLight);
+    --text-color: var(--black);
+    --shadow: var(--whiteRGBA);
+    --hover-task: var(--hover-light);
+    --task-complete: var(--task-done);
+}
+
+
+.dark {
+    --text-color: var(--white);
+    --back-color: var(--backgroungDark);
+    --shadow: var(--blackRGBA);
+    --hover-task: var(--hover-dark);
+}
+
+body {
+    font-family: "Nerko One", cursive;
+    background-color: var(--back-color);
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-weight: 700;
+    position: static;
+}
+
+.content-title {
+    color: var(--text-color);
+    font-size: 12rem;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-theme {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    color: var(--text-color);
+}
+
+
+.input-container {
+    box-shadow: 0px 0px 10px var(--shadow);
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-text {
+    color: var(--text-color);
+    width: 100%;
+    font-size: 30px;
+}
+
+.input-main {
+    display: flex;
+    width: 100%;
+}
+
+.input-btn {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.task-item {
+    box-shadow: 0px 0px 10px var(--shadow);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-top: 18px;
+    width: 100%;
+    font-size: 30px;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in;
+
+
+
+}
+
+.delBtn {
+    padding-left: 15px;
+}
+
+.task-item:hover {
+    background-color: var(--hover-task);
+    cursor: pointer;
+
+
+}
+
+
+.task-item--done {
+
+    text-decoration: line-through solid 5px;
+    background-color: var(--task-complete);
+}
